@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pre entrega 3 JS</title>
+</head>
+<body class="container mt-5 d-flex flex-column">
+
+<h1 class = "mb-5">Krusty Burguers</h1>
+
+<div class="d-flex flex-column">
+<div class="d-grid col-8">
+  <form id="agregar">
+    <label for="listadoHamburguesas" class="mb-2">Seleccione la opción que desee del menú:</label>
+    <select name="burguers" id="listadoHamburguesas" class="form-select"></select>
+    <button id="agregar" class="btn btn-success mt-3 col-5">Agregar al carrito</button> 
+  </form>
+</div>
+
+
+<button type="button" class="btn btn-primary mt-3 col-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Ver total
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Krusty Carrito</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <p id = "totalCarrito"></p>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar carrito</button>
+        <button type="button" class="btn btn-primary">Ir a pagar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id = "vaciar" type="button" class="btn btn-warning mt-3 col-3">Vaciar el carrito</button>
+
+</div>
+
+
+
+
+<div class="d-grid col-9 mt-5">
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Cantidad</th>
+      <th>Precio unitario</th>
+      <th>Operación</th>
+    </tr>
+</thead>
+  <tbody id="bodyTabla"></tbody>
+  <tfoot>
+  
+  </tfoot>
+
+</table>
+</div>
+
+
+<script src="./js/burguers.js"></script>
+<script src="./js/compra.js"></script>
+<script src="./js/app.js"></script>    
+<script src="./js/bootstrap.bundle.js"></script>    
+</body>
+</html>

@@ -1,0 +1,11 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    background-image: url(../img/Krusty\ logo.avif);
+    background-size:25em;
+    background-position: 70em -1em;
+    background-repeat: no-repeat;
+    
+}
+
