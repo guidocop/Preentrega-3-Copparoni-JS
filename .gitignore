@@ -21,7 +21,6 @@
 .ionide
 
 bootstrap-5.2.3-dist
-bootstrap.css
-bootstrap.bundle.js
+
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
